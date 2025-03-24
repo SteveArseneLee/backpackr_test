@@ -7,3 +7,32 @@
     1. user_id 를 기준으로 WAU를 계산하세요
     2. 2에서 생성된 세션 ID를 기준으로 WAU를 계산하세요
     3. 6-a, 6-b의 결과 값과 계산에 사용한 쿼리도 함께 전달해주세요
+
+[2019-Oct.csv 스키마] :
+```
+root
+|-- event_time: timestamp (nullable = true)
+|-- event_type: string (nullable = true)
+|-- product_id: integer (nullable = true)
+|-- category_id: long (nullable = true)
+|-- category_code: string (nullable = true)
+|-- brand: string (nullable = true)
+|-- price: double (nullable = true)
+|-- user_id: integer (nullable = true)
+|-- user_session: string (nullable = true)
+```
+
+
+[2019-Nov.csv 스키마] :
+```
+root
+|-- event_time: timestamp (nullable = true)
+|-- event_type: string (nullable = true)
+|-- product_id: integer (nullable = true)
+|-- category_id: long (nullable = true)
+|-- category_code: string (nullable = true)
+|-- brand: string (nullable = true)
+|-- price: double (nullable = true)
+|-- user_id: integer (nullable = true)
+|-- user_session: string (nullable = true)
+```

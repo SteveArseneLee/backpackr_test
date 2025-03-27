@@ -16,7 +16,7 @@ object SessionGenerator {
 
   /**
    * 사용자별 세션 ID를 생성하는 함수
-   * @param df KST 기준으로 정리된 DataFrame (event_time_kst 포함)
+   * @param df KST 기준으로 정리된 DataFrame (1번의 event_time_kst 포함)
    * @return session_id 컬럼이 추가된 DataFrame
    */
   def addSessionColumn(df: DataFrame)(implicit spark: SparkSession): DataFrame = {

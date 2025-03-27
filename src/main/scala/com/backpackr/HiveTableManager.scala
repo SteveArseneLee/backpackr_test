@@ -37,10 +37,10 @@ object HiveTableManager {
     spark.sql("MSCK REPAIR TABLE backpackr_events")
 
     // 결과 확인
-    println("📋 Hive 테이블 리스트:")
+    println("Hive 테이블 리스트:")
     spark.sql("SHOW TABLES").show(truncate = false)
 
-    println("📊 Hive 테이블 데이터 수 (백엔드 기준):")
+    println("Hive 테이블 데이터 수:")
     spark.sql("SELECT COUNT(*) AS total FROM backpackr_events").show()
   }
 }

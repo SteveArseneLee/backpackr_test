@@ -36,3 +36,18 @@ root
 |-- user_id: integer (nullable = true)
 |-- user_session: string (nullable = true)
 ```
+
+[External Table Schema] :
+```sql
+event_time TIMESTAMP,
+event_type STRING,
+product_id INT,
+category_id BIGINT,
+category_code STRING,
+brand STRING,
+price DOUBLE,
+user_id INT,
+user_session STRING,
+event_time_kst TIMESTAMP,
+session_id STRING
+```

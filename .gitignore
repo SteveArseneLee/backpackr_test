@@ -65,3 +65,7 @@ build/
 ### log, temp 파일 ###
 *.log
 *.tmp
+
+### csv 및 zip ###
+*.csv
+*.zip

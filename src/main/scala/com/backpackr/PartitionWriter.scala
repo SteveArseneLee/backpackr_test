@@ -12,7 +12,7 @@ object PartitionWriter {
     import spark.implicits._
 
     df
-      .withColumn("event_time_kst", expr("event_time + INTERVAL 9 HOURS")) // 한국시간 변환
-      .withColumn("partition_date", date_format($"event_time_kst", "yyyyMMdd")) // 파티션용 날짜 추출
+      .withColumn("event_time_kst", from_utc_timestamp($"event_time", "Asia/Seoul"))
+      .withColumn("partition_date", date_format($"event_time_kst", "yyyyMMdd"))
   }
 }
